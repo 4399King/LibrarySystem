@@ -68,9 +68,9 @@ background-attachment: fixed;">
                     <td>${readerinfo.phone}</td>
                 </tr>
                 </tbody>
-            </table>
+            </table>   <a class="btn btn-success btn-sm" href="reader_info_edit.html" role="button">修改</a>
         </div>
-        <a class="btn btn-success btn-sm" href="reader_info_edit.html" role="button">修改</a>
+
     </div>
 </div>
 

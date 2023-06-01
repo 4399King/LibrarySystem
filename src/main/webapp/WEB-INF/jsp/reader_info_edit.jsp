@@ -23,10 +23,15 @@ background-attachment: fixed;">
             </h3>
         </div>
         <div class="panel-body">
-            <form action="reader_edit_do_r.html" method="post" id="edit" >
+            <form action="reader_edit_do_r.html" method="post" id="edit" style="
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 384px;
+" >
                 <div class="input-group">
                     <span  class="input-group-addon">读者证号</span>
-                    <input type="text" readonly="readonly" class="form-control" name="readerId" id="readerId" value="${readerinfo.readerId}">
+                    <input disabled type="text" readonly="readonly" class="form-control" name="readerId" id="readerId" value="${readerinfo.readerId}">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">姓名</span>
