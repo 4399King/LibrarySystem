@@ -70,7 +70,7 @@ background-attachment: fixed;">
                 <th>书名</th>
                 <th>作者</th>
                 <th>出版社</th>
-                <th>ISBN</th>
+                <th>标准书号</th>
                 <th>价格</th>
                 <th>剩余数量</th>
                 <th>详情</th>

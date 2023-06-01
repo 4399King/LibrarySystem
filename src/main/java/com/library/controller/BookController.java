@@ -7,6 +7,7 @@ import com.library.service.BookService;
 import com.library.service.LendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -93,7 +94,8 @@ public class BookController {
     }
 
     @RequestMapping("/book_edit_do.html")
-    public String bookEditDo(@RequestParam(value = "pubstr") String pubstr, Book book, RedirectAttributes redirectAttributes) {
+    public String bookEditDo(@RequestParam(value = "pubstr") String pubstr, Book book, RedirectAttributes redirectAttributes, HttpServletRequest request) {
+
         book.setPubdate(getDate(pubstr));
         if (bookService.editBook(book)) {
             redirectAttributes.addFlashAttribute("succ", "图书修改成功！");

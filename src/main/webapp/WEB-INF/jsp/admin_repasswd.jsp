@@ -42,8 +42,15 @@ background-attachment: fixed;">
             <h3 class="panel-title">密码修改</h3>
         </div>
         <div class="panel-body">
-            <form method="post" action="admin_repasswd_do" class="form-inline" id="repasswd">
-                <div class="input-group">
+            <form method="post" action="admin_repasswd_do" style="display: flex" class="form-inline" id="repasswd">
+                <div class="input-group" style="
+    height: 199px;
+    display: flex;
+    width:70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+">
                     <input type="password" id="oldPasswd" name="oldPasswd" placeholder="输入旧密码" class="form-control"
                            class="form-control">
                     <input type="password" id="newPasswd" name="newPasswd" placeholder="输入新密码" class="form-control"
