@@ -38,7 +38,7 @@ background-attachment: fixed;">
                     <td>${detail.publish}</td>
                 </tr>
                 <tr>
-                    <th>ISBN</th>
+                    <th>分类号</th>
                     <td>${detail.isbn}</td>
                 </tr>
                 <tr>

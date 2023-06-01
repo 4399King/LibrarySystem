@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>编辑读者信息《 ${readerInfo.readerId}》</title>
+    <title>编辑读者信息 </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js" ></script>
@@ -18,10 +18,14 @@ background-attachment: fixed;">
 <div class="col-xs-6 col-md-offset-3" style="position: relative;">
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h3 class="panel-title">编辑读者信息《 ${readerInfo.readerId}》</h3>
+            <h3 class="panel-title">编辑读者信息 </h3>
         </div>
         <div class="panel-body">
-            <form action="reader_edit_do.html?readerId=${readerInfo.readerId}" method="post" id="readeredit" >
+            <form action="reader_edit_do.html?readerId=${readerInfo.readerId}" style="    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;" method="post" id="readeredit" >
                 <div class="input-group">
                     <span class="input-group-addon">姓名</span>
                     <input type="text" class="form-control" name="name" id="name" value="${readerInfo.name}" >

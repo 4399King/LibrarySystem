@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>编辑《 ${detail.name}》</title>
@@ -23,7 +23,13 @@ background-attachment: fixed;">
             <h3 class="panel-title">编辑《 ${detail.name}》</h3>
         </div>
         <div class="panel-body">
-            <form action="book_edit_do.html?bookId=${detail.bookId}" method="post" id="addbook" >
+            <form action="book_edit_do.html?bookId=${detail.bookId}" method="post" accept-charset="utf-8" onsubmit="document.charset='utf-8';" _charset="UTF-8" id="addbook" style="
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+">
 
                 <div class="input-group">
                     <span  class="input-group-addon">书名</span>
@@ -38,7 +44,7 @@ background-attachment: fixed;">
                     <input type="text" class="form-control" name="publish" id="publish"  value="${detail.publish}" >
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon">ISBN</span>
+                    <span class="input-group-addon">分类号</span>
                     <input type="text" class="form-control" name="isbn" id="isbn"  value="${detail.isbn}" >
                 </div>
                 <div class="input-group">
